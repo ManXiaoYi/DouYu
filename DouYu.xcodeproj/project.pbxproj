@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		782C34491E0D1187001C2ED5 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782C34481E0D1187001C2ED5 /* PageContentView.swift */; };
+		782C344B1E0D1937001C2ED5 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782C344A1E0D1937001C2ED5 /* UIColor-Extension.swift */; };
 		786F48691DE29AA200BA6200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786F48681DE29AA200BA6200 /* AppDelegate.swift */; };
 		786F486E1DE29AA200BA6200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786F486C1DE29AA200BA6200 /* Main.storyboard */; };
 		786F48701DE29AA200BA6200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 786F486F1DE29AA200BA6200 /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 		786F48C31DE2FACF00BA6200 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786F48C21DE2FACF00BA6200 /* MainViewController.swift */; };
 		786F48C51DE2FE6B00BA6200 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786F48C41DE2FE6B00BA6200 /* HomeViewController.swift */; };
 		786F48C71DE3028400BA6200 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786F48C61DE3028400BA6200 /* UIBarButtonItem-Extension.swift */; };
+		78C2A1321E039589003E3EF5 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C2A1311E039589003E3EF5 /* PageTitleView.swift */; };
+		78C2A1341E03CC8B003E3EF5 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C2A1331E03CC8B003E3EF5 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		782C34481E0D1187001C2ED5 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
+		782C344A1E0D1937001C2ED5 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		786F48651DE29AA200BA6200 /* DouYu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		786F48681DE29AA200BA6200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		786F486D1DE29AA200BA6200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +65,8 @@
 		786F48C21DE2FACF00BA6200 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		786F48C41DE2FE6B00BA6200 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		786F48C61DE3028400BA6200 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		78C2A1311E039589003E3EF5 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		78C2A1331E03CC8B003E3EF5 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +309,8 @@
 		786F48B51DE2ADF700BA6200 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				78C2A1311E039589003E3EF5 /* PageTitleView.swift */,
+				782C34481E0D1187001C2ED5 /* PageContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -371,6 +381,7 @@
 			isa = PBXGroup;
 			children = (
 				786F48BF1DE2ADF700BA6200 /* Extension */,
+				78C2A1331E03CC8B003E3EF5 /* Common.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -379,6 +390,7 @@
 			isa = PBXGroup;
 			children = (
 				786F48C61DE3028400BA6200 /* UIBarButtonItem-Extension.swift */,
+				782C344A1E0D1937001C2ED5 /* UIColor-Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -446,7 +458,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "满孝意";
 				TargetAttributes = {
 					786F48641DE29AA200BA6200 = {
@@ -525,8 +537,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				786F48691DE29AA200BA6200 /* AppDelegate.swift in Sources */,
+				782C344B1E0D1937001C2ED5 /* UIColor-Extension.swift in Sources */,
 				786F48C31DE2FACF00BA6200 /* MainViewController.swift in Sources */,
+				78C2A1321E039589003E3EF5 /* PageTitleView.swift in Sources */,
+				782C34491E0D1187001C2ED5 /* PageContentView.swift in Sources */,
 				786F48C71DE3028400BA6200 /* UIBarButtonItem-Extension.swift in Sources */,
+				78C2A1341E03CC8B003E3EF5 /* Common.swift in Sources */,
 				786F48C51DE2FE6B00BA6200 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -637,6 +653,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -659,7 +676,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -686,6 +703,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -702,7 +720,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
