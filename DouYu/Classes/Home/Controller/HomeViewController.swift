@@ -46,7 +46,8 @@ class HomeViewController: UIViewController {
         
         // 2. 设置所有控制器
         var childVCs = [UIViewController]()
-        for _ in 1...4 {
+        childVCs.append(RecommendViewController())
+        for _ in 1...3 {
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
             childVCs.append(vc)
@@ -57,6 +58,7 @@ class HomeViewController: UIViewController {
         pageContentView.delegate = self
         return pageContentView
         }()
+    
     
     // MARK:- 系统回调函数
     override func viewDidLoad() {
