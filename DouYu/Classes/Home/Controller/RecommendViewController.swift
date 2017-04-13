@@ -51,7 +51,8 @@ class RecommendViewController: UIViewController {
         // 设置UI界面
         setupUI()
         
-        
+        // 发送网络请求
+        loadData()
     }
     
 }
@@ -61,6 +62,15 @@ extension RecommendViewController {
     fileprivate func setupUI() {
         // 1. 将collectionView添加到控制器的View中
         view.addSubview(collectionView)
+    }
+}
+
+// MARK:- 请求数据
+extension RecommendViewController {
+    fileprivate func loadData() {
+        NetworkTools.requestData(type: .GET, URLStr: "http://httpbin.org/get", params: ["name": "my"]) { (result) in
+            print(result)
+        }
     }
 }
 

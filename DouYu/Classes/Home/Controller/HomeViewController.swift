@@ -63,7 +63,7 @@ class HomeViewController: UIViewController {
     // MARK:- 系统回调函数
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         // 设置UI界面
         setupUI()
     }
@@ -87,7 +87,7 @@ extension HomeViewController {
         pageContentView.backgroundColor = UIColor.purple
     }
     
-    private func setupNavigationBar() {
+    fileprivate func setupNavigationBar() {
         // 1. leftBarButtonItem
         navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "logo")
         
@@ -110,7 +110,7 @@ extension HomeViewController: PageTitleViewDelegate {
 
 extension HomeViewController: PageContentViewDelegate {
     func pageContentView(_ contentView: PageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
-        pageTitleView.setTitleWithProgress(progress: progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
+        pageTitleView.setTitleWithProgress(progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
     }
 }
 

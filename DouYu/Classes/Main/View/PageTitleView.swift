@@ -72,7 +72,7 @@ extension PageTitleView {
         setupBottomMenuAndScrollLine()
     }
     
-    private func setupTitleLabels() {
+    fileprivate func setupTitleLabels() {
         let labelW: CGFloat = kScreenW / CGFloat(titles.count)
         let labelH: CGFloat = frame.height - kScrollLineH
         let labelY: CGFloat = 0
@@ -98,12 +98,12 @@ extension PageTitleView {
             
             // 5. 给label添加手势
             label.isUserInteractionEnabled = true
-            let tapGR = UITapGestureRecognizer(target: self, action: #selector(self.titleLabelClick(tapGR:)))
-            label.addGestureRecognizer(tapGR)
+//            let tapGR = UITapGestureRecognizer(target: self, action: #selector(self.titleLabelClick(tapGR:)))
+//            label.addGestureRecognizer(tapGR)
         }
     }
     
-    private func setupBottomMenuAndScrollLine() {
+    fileprivate func setupBottomMenuAndScrollLine() {
         // 1. 添加底线
         let bottomLine = UIView()
         bottomLine.backgroundColor = UIColor(r: kNormalColor.0, g: kNormalColor.1, b: kNormalColor.2)
@@ -126,7 +126,7 @@ extension PageTitleView {
 
 // MARK:- 监听label的点击
 extension PageTitleView {
-    @objc fileprivate func titleLabelClick(tapGR: UITapGestureRecognizer) {
+    @objc fileprivate func titleLabelClick(_ tapGR: UITapGestureRecognizer) {
         // 1. 获取当前label
         guard let currentLabel = tapGR.view as? UILabel else {
             return
@@ -155,7 +155,7 @@ extension PageTitleView {
 
 // MARK:- 对外暴露的方法
 extension PageTitleView {
-    func setTitleWithProgress(progress: CGFloat, sourceIndex: Int, targetIndex: Int)  {
+    func setTitleWithProgress(_ progress: CGFloat, sourceIndex: Int, targetIndex: Int)  {
         // 1. 取出sourceIndex / targetIndex
         let sourceLabel = titleLabels[sourceIndex]
         let targetLabel = titleLabels[targetIndex]

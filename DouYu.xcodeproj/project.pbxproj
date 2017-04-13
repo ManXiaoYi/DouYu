@@ -13,14 +13,13 @@
 		7811CD761E9F28F3007AAEF3 /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7811CD741E9F28F3007AAEF3 /* CollectionNormalCell.xib */; };
 		7811CD791E9F3137007AAEF3 /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7811CD771E9F3137007AAEF3 /* CollectionPrettyCell.swift */; };
 		7811CD7A1E9F3137007AAEF3 /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7811CD781E9F3137007AAEF3 /* CollectionPrettyCell.xib */; };
+		7811CD7C1E9F4B36007AAEF3 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7811CD7B1E9F4B36007AAEF3 /* NetworkTools.swift */; };
 		782C34491E0D1187001C2ED5 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782C34481E0D1187001C2ED5 /* PageContentView.swift */; };
 		782C344B1E0D1937001C2ED5 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782C344A1E0D1937001C2ED5 /* UIColor-Extension.swift */; };
 		786F48691DE29AA200BA6200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786F48681DE29AA200BA6200 /* AppDelegate.swift */; };
 		786F486E1DE29AA200BA6200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786F486C1DE29AA200BA6200 /* Main.storyboard */; };
 		786F48701DE29AA200BA6200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 786F486F1DE29AA200BA6200 /* Assets.xcassets */; };
 		786F48731DE29AA200BA6200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786F48711DE29AA200BA6200 /* LaunchScreen.storyboard */; };
-		786F487E1DE29AA200BA6200 /* DouYuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786F487D1DE29AA200BA6200 /* DouYuTests.swift */; };
-		786F48891DE29AA200BA6200 /* DouYuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786F48881DE29AA200BA6200 /* DouYuUITests.swift */; };
 		786F48981DE2A09600BA6200 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786F48961DE2A09600BA6200 /* Home.storyboard */; };
 		786F489B1DE2A0BF00BA6200 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786F48991DE2A0BF00BA6200 /* Live.storyboard */; };
 		786F489E1DE2A0D300BA6200 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786F489C1DE2A0D300BA6200 /* Follow.storyboard */; };
@@ -31,24 +30,8 @@
 		788C24011E9F171100F9A453 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788C24001E9F171100F9A453 /* RecommendViewController.swift */; };
 		78C2A1321E039589003E3EF5 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C2A1311E039589003E3EF5 /* PageTitleView.swift */; };
 		78C2A1341E03CC8B003E3EF5 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C2A1331E03CC8B003E3EF5 /* Common.swift */; };
+		F5CE13E0A917C3355B09311B /* Pods_DouYu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1667BC1C4860A19E4627B4A /* Pods_DouYu.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		786F487A1DE29AA200BA6200 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 786F485D1DE29AA100BA6200 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 786F48641DE29AA200BA6200;
-			remoteInfo = DouYu;
-		};
-		786F48851DE29AA200BA6200 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 786F485D1DE29AA100BA6200 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 786F48641DE29AA200BA6200;
-			remoteInfo = DouYu;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7811CD6F1E9F2510007AAEF3 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
@@ -57,6 +40,7 @@
 		7811CD741E9F28F3007AAEF3 /* CollectionNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
 		7811CD771E9F3137007AAEF3 /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
 		7811CD781E9F3137007AAEF3 /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
+		7811CD7B1E9F4B36007AAEF3 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		782C34481E0D1187001C2ED5 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		782C344A1E0D1937001C2ED5 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		786F48651DE29AA200BA6200 /* DouYu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYu.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,12 +49,6 @@
 		786F486F1DE29AA200BA6200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		786F48721DE29AA200BA6200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		786F48741DE29AA200BA6200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		786F48791DE29AA200BA6200 /* DouYuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DouYuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		786F487D1DE29AA200BA6200 /* DouYuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouYuTests.swift; sourceTree = "<group>"; };
-		786F487F1DE29AA200BA6200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		786F48841DE29AA200BA6200 /* DouYuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DouYuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		786F48881DE29AA200BA6200 /* DouYuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouYuUITests.swift; sourceTree = "<group>"; };
-		786F488A1DE29AA200BA6200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		786F48971DE2A09600BA6200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		786F489A1DE2A0BF00BA6200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Live.storyboard; sourceTree = "<group>"; };
 		786F489D1DE2A0D300BA6200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Follow.storyboard; sourceTree = "<group>"; };
@@ -81,6 +59,9 @@
 		788C24001E9F171100F9A453 /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 		78C2A1311E039589003E3EF5 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		78C2A1331E03CC8B003E3EF5 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		80FDA8E0B0FD6621D10CA8B2 /* Pods-DouYu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYu.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouYu/Pods-DouYu.release.xcconfig"; sourceTree = "<group>"; };
+		D1667BC1C4860A19E4627B4A /* Pods_DouYu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouYu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D97CA2DEC3AE212197CDD3D9 /* Pods-DouYu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouYu/Pods-DouYu.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,20 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		786F48761DE29AA200BA6200 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		786F48811DE29AA200BA6200 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F5CE13E0A917C3355B09311B /* Pods_DouYu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,9 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				786F48671DE29AA200BA6200 /* DouYu */,
-				786F487C1DE29AA200BA6200 /* DouYuTests */,
-				786F48871DE29AA200BA6200 /* DouYuUITests */,
 				786F48661DE29AA200BA6200 /* Products */,
+				C1E6A0C582501EBDE56FD8D4 /* Pods */,
+				DF93EF881DF4A077D54D346F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,8 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				786F48651DE29AA200BA6200 /* DouYu.app */,
-				786F48791DE29AA200BA6200 /* DouYuTests.xctest */,
-				786F48841DE29AA200BA6200 /* DouYuUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,24 +104,6 @@
 				786F48741DE29AA200BA6200 /* Info.plist */,
 			);
 			path = DouYu;
-			sourceTree = "<group>";
-		};
-		786F487C1DE29AA200BA6200 /* DouYuTests */ = {
-			isa = PBXGroup;
-			children = (
-				786F487D1DE29AA200BA6200 /* DouYuTests.swift */,
-				786F487F1DE29AA200BA6200 /* Info.plist */,
-			);
-			path = DouYuTests;
-			sourceTree = "<group>";
-		};
-		786F48871DE29AA200BA6200 /* DouYuUITests */ = {
-			isa = PBXGroup;
-			children = (
-				786F48881DE29AA200BA6200 /* DouYuUITests.swift */,
-				786F488A1DE29AA200BA6200 /* Info.plist */,
-			);
-			path = DouYuUITests;
 			sourceTree = "<group>";
 		};
 		786F48A21DE2ADF700BA6200 /* Classes */ = {
@@ -403,6 +351,7 @@
 			children = (
 				786F48BF1DE2ADF700BA6200 /* Extension */,
 				78C2A1331E03CC8B003E3EF5 /* Common.swift */,
+				7811CD7B1E9F4B36007AAEF3 /* NetworkTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -416,6 +365,23 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		C1E6A0C582501EBDE56FD8D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D97CA2DEC3AE212197CDD3D9 /* Pods-DouYu.debug.xcconfig */,
+				80FDA8E0B0FD6621D10CA8B2 /* Pods-DouYu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DF93EF881DF4A077D54D346F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1667BC1C4860A19E4627B4A /* Pods_DouYu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -423,9 +389,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 786F488D1DE29AA200BA6200 /* Build configuration list for PBXNativeTarget "DouYu" */;
 			buildPhases = (
+				C70DDA067C993D45AE89298C /* [CP] Check Pods Manifest.lock */,
 				786F48611DE29AA200BA6200 /* Sources */,
 				786F48621DE29AA200BA6200 /* Frameworks */,
 				786F48631DE29AA200BA6200 /* Resources */,
+				5A6151E25347AB9C3AE596F2 /* [CP] Embed Pods Frameworks */,
+				EB1680437009A4B81C71C573 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -435,42 +404,6 @@
 			productName = DouYu;
 			productReference = 786F48651DE29AA200BA6200 /* DouYu.app */;
 			productType = "com.apple.product-type.application";
-		};
-		786F48781DE29AA200BA6200 /* DouYuTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 786F48901DE29AA200BA6200 /* Build configuration list for PBXNativeTarget "DouYuTests" */;
-			buildPhases = (
-				786F48751DE29AA200BA6200 /* Sources */,
-				786F48761DE29AA200BA6200 /* Frameworks */,
-				786F48771DE29AA200BA6200 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				786F487B1DE29AA200BA6200 /* PBXTargetDependency */,
-			);
-			name = DouYuTests;
-			productName = DouYuTests;
-			productReference = 786F48791DE29AA200BA6200 /* DouYuTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		786F48831DE29AA200BA6200 /* DouYuUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 786F48931DE29AA200BA6200 /* Build configuration list for PBXNativeTarget "DouYuUITests" */;
-			buildPhases = (
-				786F48801DE29AA200BA6200 /* Sources */,
-				786F48811DE29AA200BA6200 /* Frameworks */,
-				786F48821DE29AA200BA6200 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				786F48861DE29AA200BA6200 /* PBXTargetDependency */,
-			);
-			name = DouYuUITests;
-			productName = DouYuUITests;
-			productReference = 786F48841DE29AA200BA6200 /* DouYuUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -485,19 +418,8 @@
 					786F48641DE29AA200BA6200 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = MNJ2KQHT4F;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
-					};
-					786F48781DE29AA200BA6200 = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = MNJ2KQHT4F;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 786F48641DE29AA200BA6200;
-					};
-					786F48831DE29AA200BA6200 = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = MNJ2KQHT4F;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 786F48641DE29AA200BA6200;
 					};
 				};
 			};
@@ -515,8 +437,6 @@
 			projectRoot = "";
 			targets = (
 				786F48641DE29AA200BA6200 /* DouYu */,
-				786F48781DE29AA200BA6200 /* DouYuTests */,
-				786F48831DE29AA200BA6200 /* DouYuUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -539,21 +459,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		786F48771DE29AA200BA6200 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		786F48821DE29AA200BA6200 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A6151E25347AB9C3AE596F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DouYu/Pods-DouYu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C70DDA067C993D45AE89298C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EB1680437009A4B81C71C573 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DouYu/Pods-DouYu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		786F48611DE29AA200BA6200 /* Sources */ = {
@@ -571,40 +525,12 @@
 				786F48C71DE3028400BA6200 /* UIBarButtonItem-Extension.swift in Sources */,
 				7811CD791E9F3137007AAEF3 /* CollectionPrettyCell.swift in Sources */,
 				78C2A1341E03CC8B003E3EF5 /* Common.swift in Sources */,
+				7811CD7C1E9F4B36007AAEF3 /* NetworkTools.swift in Sources */,
 				786F48C51DE2FE6B00BA6200 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		786F48751DE29AA200BA6200 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				786F487E1DE29AA200BA6200 /* DouYuTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		786F48801DE29AA200BA6200 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				786F48891DE29AA200BA6200 /* DouYuUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		786F487B1DE29AA200BA6200 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 786F48641DE29AA200BA6200 /* DouYu */;
-			targetProxy = 786F487A1DE29AA200BA6200 /* PBXContainerItemProxy */;
-		};
-		786F48861DE29AA200BA6200 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 786F48641DE29AA200BA6200 /* DouYu */;
-			targetProxy = 786F48851DE29AA200BA6200 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		786F486C1DE29AA200BA6200 /* Main.storyboard */ = {
@@ -758,7 +684,9 @@
 		};
 		786F488E1DE29AA200BA6200 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D97CA2DEC3AE212197CDD3D9 /* Pods-DouYu.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = MNJ2KQHT4F;
@@ -773,7 +701,9 @@
 		};
 		786F488F1DE29AA200BA6200 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80FDA8E0B0FD6621D10CA8B2 /* Pods-DouYu.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = MNJ2KQHT4F;
@@ -783,64 +713,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.woai.DouYu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		786F48911DE29AA200BA6200 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = MNJ2KQHT4F;
-				INFOPLIST_FILE = DouYuTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.woai.DouYuTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DouYu.app/DouYu";
-			};
-			name = Debug;
-		};
-		786F48921DE29AA200BA6200 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = MNJ2KQHT4F;
-				INFOPLIST_FILE = DouYuTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.woai.DouYuTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DouYu.app/DouYu";
-			};
-			name = Release;
-		};
-		786F48941DE29AA200BA6200 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = MNJ2KQHT4F;
-				INFOPLIST_FILE = DouYuUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.woai.DouYuUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = DouYu;
-			};
-			name = Debug;
-		};
-		786F48951DE29AA200BA6200 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = MNJ2KQHT4F;
-				INFOPLIST_FILE = DouYuUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.woai.DouYuUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = DouYu;
 			};
 			name = Release;
 		};
@@ -861,24 +733,6 @@
 			buildConfigurations = (
 				786F488E1DE29AA200BA6200 /* Debug */,
 				786F488F1DE29AA200BA6200 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		786F48901DE29AA200BA6200 /* Build configuration list for PBXNativeTarget "DouYuTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				786F48911DE29AA200BA6200 /* Debug */,
-				786F48921DE29AA200BA6200 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		786F48931DE29AA200BA6200 /* Build configuration list for PBXNativeTarget "DouYuUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				786F48941DE29AA200BA6200 /* Debug */,
-				786F48951DE29AA200BA6200 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
