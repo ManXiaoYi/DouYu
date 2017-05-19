@@ -14,8 +14,13 @@
 		7811CD791E9F3137007AAEF3 /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7811CD771E9F3137007AAEF3 /* CollectionPrettyCell.swift */; };
 		7811CD7A1E9F3137007AAEF3 /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7811CD781E9F3137007AAEF3 /* CollectionPrettyCell.xib */; };
 		7811CD7C1E9F4B36007AAEF3 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7811CD7B1E9F4B36007AAEF3 /* NetworkTools.swift */; };
+		7811CD7E1E9F59CE007AAEF3 /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7811CD7D1E9F59CE007AAEF3 /* RecommendViewModel.swift */; };
+		7811CD801E9F5AD4007AAEF3 /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7811CD7F1E9F5AD4007AAEF3 /* NSDate-Extension.swift */; };
+		7811CD821E9F7A3C007AAEF3 /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7811CD811E9F7A3C007AAEF3 /* AnchorGroup.swift */; };
+		7811CD841E9F8078007AAEF3 /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7811CD831E9F8078007AAEF3 /* AnchorModel.swift */; };
 		782C34491E0D1187001C2ED5 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782C34481E0D1187001C2ED5 /* PageContentView.swift */; };
 		782C344B1E0D1937001C2ED5 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782C344A1E0D1937001C2ED5 /* UIColor-Extension.swift */; };
+		7856C4901ECED3F30052738F /* CollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7856C48F1ECED3F30052738F /* CollectionBaseCell.swift */; };
 		786F48691DE29AA200BA6200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786F48681DE29AA200BA6200 /* AppDelegate.swift */; };
 		786F486E1DE29AA200BA6200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786F486C1DE29AA200BA6200 /* Main.storyboard */; };
 		786F48701DE29AA200BA6200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 786F486F1DE29AA200BA6200 /* Assets.xcassets */; };
@@ -41,8 +46,13 @@
 		7811CD771E9F3137007AAEF3 /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
 		7811CD781E9F3137007AAEF3 /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
 		7811CD7B1E9F4B36007AAEF3 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		7811CD7D1E9F59CE007AAEF3 /* RecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
+		7811CD7F1E9F5AD4007AAEF3 /* NSDate-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
+		7811CD811E9F7A3C007AAEF3 /* AnchorGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
+		7811CD831E9F8078007AAEF3 /* AnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
 		782C34481E0D1187001C2ED5 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		782C344A1E0D1937001C2ED5 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		7856C48F1ECED3F30052738F /* CollectionBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionBaseCell.swift; sourceTree = "<group>"; };
 		786F48651DE29AA200BA6200 /* DouYu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		786F48681DE29AA200BA6200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		786F486D1DE29AA200BA6200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -200,6 +210,7 @@
 		786F48AC1DE2ADF700BA6200 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				7811CD7D1E9F59CE007AAEF3 /* RecommendViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -267,6 +278,8 @@
 		786F48B41DE2ADF700BA6200 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7811CD811E9F7A3C007AAEF3 /* AnchorGroup.swift */,
+				7811CD831E9F8078007AAEF3 /* AnchorModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -280,6 +293,7 @@
 				7811CD741E9F28F3007AAEF3 /* CollectionNormalCell.xib */,
 				7811CD771E9F3137007AAEF3 /* CollectionPrettyCell.swift */,
 				7811CD781E9F3137007AAEF3 /* CollectionPrettyCell.xib */,
+				7856C48F1ECED3F30052738F /* CollectionBaseCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -361,6 +375,7 @@
 			children = (
 				786F48C61DE3028400BA6200 /* UIBarButtonItem-Extension.swift */,
 				782C344A1E0D1937001C2ED5 /* UIColor-Extension.swift */,
+				7811CD7F1E9F5AD4007AAEF3 /* NSDate-Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -412,7 +427,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "满孝意";
 				TargetAttributes = {
 					786F48641DE29AA200BA6200 = {
@@ -518,15 +533,20 @@
 				7811CD711E9F2510007AAEF3 /* CollectionHeaderView.swift in Sources */,
 				782C344B1E0D1937001C2ED5 /* UIColor-Extension.swift in Sources */,
 				788C24011E9F171100F9A453 /* RecommendViewController.swift in Sources */,
+				7811CD821E9F7A3C007AAEF3 /* AnchorGroup.swift in Sources */,
 				786F48C31DE2FACF00BA6200 /* MainViewController.swift in Sources */,
 				7811CD751E9F28F3007AAEF3 /* CollectionNormalCell.swift in Sources */,
 				78C2A1321E039589003E3EF5 /* PageTitleView.swift in Sources */,
 				782C34491E0D1187001C2ED5 /* PageContentView.swift in Sources */,
 				786F48C71DE3028400BA6200 /* UIBarButtonItem-Extension.swift in Sources */,
 				7811CD791E9F3137007AAEF3 /* CollectionPrettyCell.swift in Sources */,
+				7811CD801E9F5AD4007AAEF3 /* NSDate-Extension.swift in Sources */,
+				7856C4901ECED3F30052738F /* CollectionBaseCell.swift in Sources */,
 				78C2A1341E03CC8B003E3EF5 /* Common.swift in Sources */,
 				7811CD7C1E9F4B36007AAEF3 /* NetworkTools.swift in Sources */,
 				786F48C51DE2FE6B00BA6200 /* HomeViewController.swift in Sources */,
+				7811CD7E1E9F59CE007AAEF3 /* RecommendViewModel.swift in Sources */,
+				7811CD841E9F8078007AAEF3 /* AnchorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

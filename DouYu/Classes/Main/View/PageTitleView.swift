@@ -73,6 +73,8 @@ extension PageTitleView {
     }
     
     fileprivate func setupTitleLabels() {
+        
+        // 0. 确定label的一些frame的值
         let labelW: CGFloat = kScreenW / CGFloat(titles.count)
         let labelH: CGFloat = frame.height - kScrollLineH
         let labelY: CGFloat = 0
@@ -98,8 +100,8 @@ extension PageTitleView {
             
             // 5. 给label添加手势
             label.isUserInteractionEnabled = true
-//            let tapGR = UITapGestureRecognizer(target: self, action: #selector(self.titleLabelClick(tapGR:)))
-//            label.addGestureRecognizer(tapGR)
+            let tapGR = UITapGestureRecognizer(target: self, action: #selector(self.titleLabelClick(_:)))
+            label.addGestureRecognizer(tapGR)
         }
     }
     

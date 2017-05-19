@@ -102,7 +102,7 @@ extension PageContentView: UICollectionViewDataSource {
     }
 }
 
-// MARK:- 遵守
+// MARK:- 遵守UICollectionView协议
 extension PageContentView: UICollectionViewDelegate {
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         isForbidScrollDelegate = false
