@@ -17,12 +17,14 @@ import UIKit
 class RecommendViewModel {
     // MARK:- 懒加载属性
     lazy var archorGroups: [AnchorGroup] = [AnchorGroup]()
+    lazy var cycleModels: [CycleModel] = [CycleModel]()
     fileprivate lazy var bigDataGroup: AnchorGroup = AnchorGroup()
     fileprivate lazy var prettyGroup: AnchorGroup = AnchorGroup()
 }
 
 // MARK:- 发送网络请求
 extension RecommendViewModel {
+    // 请求推荐数据
     func requestData(finishCallback: @escaping () -> ()) {
         // 1. 定义参数
         let params = ["limit": "4", "offset": "0", "time": NSDate.getCurrentTime()]
@@ -55,7 +57,7 @@ extension RecommendViewModel {
             
             // 3.4 离开组
             disGroup.leave()
-            print("请求到0组数据")
+            //print("请求到0组数据")
         }
         
         
@@ -82,7 +84,7 @@ extension RecommendViewModel {
             
             // 3.4 离开组
             disGroup.leave()
-            print("请求到1组数据")
+            //print("请求到1组数据")
         }
         
         
@@ -104,15 +106,34 @@ extension RecommendViewModel {
             
             // 4. 离开组
             disGroup.leave()
-            print("请求到2~12组数据")
+            //print("请求到2~12组数据")
         }
         
         
         // 6. 所有的数据都请求到，然后排序
         disGroup.notify(queue: DispatchQueue.main) {
-            print("所有的数据都请求到")
+            //print("所有的数据都请求到")
             self.archorGroups.insert(self.prettyGroup, at: 0)
             self.archorGroups.insert(self.bigDataGroup, at: 0)
+            
+            finishCallback()
+        }
+    }
+    
+    // 请求无线轮播数据
+    func requestCycleData(finishCallback: @escaping () -> ()) {
+        // http://www.douyutv.com/api/v1/slide/6?version=2.300
+        NetworkTools.requestData(type: .GET, URLStr: "http://www.douyutv.com/api/v1/slide/6", params: ["version": "2.300"]) { (result) in
+            // 1. 获取整体字典数据
+            guard let resultDict = result as? [String: NSObject] else { return }
+            
+            // 2. 根据data的key获取数据
+            guard let dataArray = resultDict["data"] as? [[String: NSObject]] else { return }
+            
+            // 3. 字典转模型对象
+            for dict in dataArray {
+                self.cycleModels.append(CycleModel(dict: dict))
+            }
             
             finishCallback()
         }

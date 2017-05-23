@@ -14,6 +14,8 @@ private let kNormalItemH = kItemW * 3 / 4
 private let kPrettyItemH = kItemW * 4 / 3
 private let kHeaderViewH: CGFloat = 50
 
+private let kCycleViewH = kScreenW * 3 / 8
+
 private let kNormalCellID = "kNormalCellID"
 private let kPrettyCellID = "kPrettyCellID"
 private let kHeaderViewID = "kHeaderViewID"
@@ -22,7 +24,6 @@ class RecommendViewController: UIViewController {
     
     // MARK:- 懒加载属性
     lazy var recommendVM: RecommendViewModel = RecommendViewModel()
-    
     lazy var collectionView: UICollectionView = {[unowned self] in
         // 1. 创建布局
         let layout = UICollectionViewFlowLayout()
@@ -44,7 +45,11 @@ class RecommendViewController: UIViewController {
         
         return collectionView
         }()
-    
+    lazy var cycleView: RecommendCycleView = {
+        let cycleView = RecommendCycleView.recommendCycleView()
+        cycleView.frame = CGRect(x: 0, y: -kCycleViewH, width: kScreenW, height: kCycleViewH)
+        return cycleView
+    }()
     
     // MARK:- 系统回调函数
     override func viewDidLoad() {
@@ -64,14 +69,26 @@ extension RecommendViewController {
     fileprivate func setupUI() {
         // 1. 将collectionView添加到控制器的View中
         view.addSubview(collectionView)
+        
+        // 2. 将CycleView添加到UICollectionView中
+        collectionView.addSubview(cycleView)
+        
+        // 3. 设置collectionView的内边距
+        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH, left: 0, bottom: 0, right: 0)
     }
 }
 
 // MARK:- 请求数据
 extension RecommendViewController {
     fileprivate func loadData() {
+        // 1. 请求推荐数据
         recommendVM.requestData {
             self.collectionView.reloadData()
+        }
+        
+        // 2. 请求轮播数据
+        recommendVM.requestCycleData {
+            self.cycleView.cycleModels = self.recommendVM.cycleModels
         }
     }
 }

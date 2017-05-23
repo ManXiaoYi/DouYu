@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionCycleCell" customModule="DouYu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="lvd-Ck-464">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ERG-kO-V2n">
+                        <rect key="frame" x="0.0" y="120" width="375" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="斗鱼直播" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFT-zk-o9J">
+                                <rect key="frame" x="15" y="7.5" width="53.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YFT-zk-o9J" firstAttribute="centerY" secondItem="ERG-kO-V2n" secondAttribute="centerY" id="6TB-Xy-owO"/>
+                            <constraint firstAttribute="height" constant="30" id="O9p-dJ-nz4"/>
+                            <constraint firstItem="YFT-zk-o9J" firstAttribute="leading" secondItem="ERG-kO-V2n" secondAttribute="leading" constant="15" id="bck-1S-M38"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="lvd-Ck-464" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2d1-xt-omu"/>
+                <constraint firstAttribute="trailing" secondItem="lvd-Ck-464" secondAttribute="trailing" id="4hs-L9-nTW"/>
+                <constraint firstItem="ERG-kO-V2n" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Bo2-QF-gsI"/>
+                <constraint firstItem="lvd-Ck-464" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="EP8-g6-65r"/>
+                <constraint firstAttribute="bottom" secondItem="lvd-Ck-464" secondAttribute="bottom" id="iqP-zq-rSA"/>
+                <constraint firstAttribute="bottom" secondItem="ERG-kO-V2n" secondAttribute="bottom" id="uZX-Mg-XhX"/>
+                <constraint firstAttribute="trailing" secondItem="ERG-kO-V2n" secondAttribute="trailing" id="yiu-V7-o5O"/>
+            </constraints>
+            <size key="customSize" width="316" height="124"/>
+            <connections>
+                <outlet property="iconImageView" destination="lvd-Ck-464" id="epn-D6-Fxe"/>
+                <outlet property="titleLabel" destination="YFT-zk-o9J" id="IgQ-Vn-Z7l"/>
+            </connections>
+            <point key="canvasLocation" x="4" y="91"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Img_default" width="172" height="103"/>
+    </resources>
+</document>
