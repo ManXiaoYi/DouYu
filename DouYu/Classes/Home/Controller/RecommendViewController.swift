@@ -15,6 +15,7 @@ private let kPrettyItemH = kItemW * 4 / 3
 private let kHeaderViewH: CGFloat = 50
 
 private let kCycleViewH = kScreenW * 3 / 8
+private let kGameViewH: CGFloat = 90
 
 private let kNormalCellID = "kNormalCellID"
 private let kPrettyCellID = "kPrettyCellID"
@@ -47,8 +48,13 @@ class RecommendViewController: UIViewController {
         }()
     lazy var cycleView: RecommendCycleView = {
         let cycleView = RecommendCycleView.recommendCycleView()
-        cycleView.frame = CGRect(x: 0, y: -kCycleViewH, width: kScreenW, height: kCycleViewH)
+        cycleView.frame = CGRect(x: 0, y: -(kCycleViewH + kGameViewH), width: kScreenW, height: kCycleViewH)
         return cycleView
+    }()
+    lazy var gameView: RecommendGameView = {
+        let gameView = RecommendGameView.recommendGameView()
+        gameView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
+        return gameView
     }()
     
     // MARK:- 系统回调函数
@@ -70,11 +76,14 @@ extension RecommendViewController {
         // 1. 将collectionView添加到控制器的View中
         view.addSubview(collectionView)
         
-        // 2. 将CycleView添加到UICollectionView中
+        // 2. 将cycleView添加到collectionView中
         collectionView.addSubview(cycleView)
         
-        // 3. 设置collectionView的内边距
-        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH, left: 0, bottom: 0, right: 0)
+        // 3. 将gameView添加到collectionView中
+        collectionView.addSubview(gameView)
+        
+        // 4. 设置collectionView的内边距
+        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH + kGameViewH, left: 0, bottom: 0, right: 0)
     }
 }
 
@@ -83,7 +92,25 @@ extension RecommendViewController {
     fileprivate func loadData() {
         // 1. 请求推荐数据
         recommendVM.requestData {
+            // 1. 展示推荐数据
             self.collectionView.reloadData()
+            
+            // 2. 将数据传递给gameView
+            var groups = self.recommendVM.archorGroups
+            
+            // 2.1 移除前两组数据
+            groups.removeFirst()
+            groups.removeFirst()
+            
+            // 2.2 添加更多组
+            let moreGroup = AnchorGroup()
+            moreGroup.tag_name = "更多"
+            groups.append(moreGroup)
+            
+            self.gameView.groups = groups
+            
+            // 3. 数据请求完成 
+
         }
         
         // 2. 请求轮播数据
