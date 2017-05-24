@@ -10,14 +10,14 @@ import UIKit
 import Alamofire
 
 enum MethodType {
-    case GET
-    case POST
+    case get
+    case post
 }
 
 class NetworkTools {
-    class func requestData(type: MethodType, URLStr: String, params: [String: Any]? = nil, finishedCallback: @escaping (_ result: Any) -> ()) {
+    class func requestData(_ type: MethodType, URLStr: String, params: [String: Any]? = nil, finishedCallback: @escaping (_ result: Any) -> ()) {
         // 1. 获取类型
-        let method = type == .GET ? HTTPMethod.get : HTTPMethod.post
+        let method = type == .get ? HTTPMethod.get : HTTPMethod.post
         
         // 2. 发送网络请求
         Alamofire.request(URLStr, method: method, parameters: params).responseJSON { (response) in
@@ -56,7 +56,7 @@ class NetworkTools {
 }
 
 // MARK:- 字典转换为JSONString
-func getJSONStrFromDict(dict: NSDictionary) -> String {
+func getJSONStrFromDict(_ dict: NSDictionary) -> String {
     if (!JSONSerialization.isValidJSONObject(dict)) {
         print("无法解析出JSONString")
         return ""
@@ -68,7 +68,7 @@ func getJSONStrFromDict(dict: NSDictionary) -> String {
 }
 
 // MARK:- JSONString转换为字典
-func getDictFromJSONStr(jsonStr:String) ->NSDictionary {
+func getDictFromJSONStr(_ jsonStr:String) ->NSDictionary {
     let jsonData:Data = jsonStr.data(using: .utf8)!
     
     let dict = try? JSONSerialization.jsonObject(with: jsonData, options: .mutableContainers)

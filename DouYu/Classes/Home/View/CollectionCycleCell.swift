@@ -25,7 +25,7 @@ class CollectionCycleCell: UICollectionViewCell {
             titleLabel.text = cycleModel.title
             
             // 2. 设置图片
-            guard let iconURL = NSURL(string: cycleModel.pic_url ) else { return }
+            guard let iconURL = URL(string: cycleModel.pic_url ) else { return }
             iconImageView.kf.setImage(with: ImageResource(downloadURL: iconURL as URL), placeholder: UIImage(named: "Img_default"))
         }
     }

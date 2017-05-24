@@ -25,9 +25,9 @@ class RecommendViewModel {
 // MARK:- 发送网络请求
 extension RecommendViewModel {
     // 请求推荐数据
-    func requestData(finishCallback: @escaping () -> ()) {
+    func requestData(_ finishCallback: @escaping () -> ()) {
         // 1. 定义参数
-        let params = ["limit": "4", "offset": "0", "time": NSDate.getCurrentTime()]
+        let params = ["limit": "4", "offset": "0", "time": Date.getCurrentTime()]
         
         
         // 2. 创建Group
@@ -37,7 +37,7 @@ extension RecommendViewModel {
         // 3. 请求第一部分推荐数据
         disGroup.enter()
         // http://capi.douyucdn.cn/api/v1/getbigDataRoom?time=1474252024
-        NetworkTools.requestData(type: .GET, URLStr: "http://capi.douyucdn.cn/api/v1/getbigDataRoom", params: ["time": NSDate.getCurrentTime()]) { (result) in
+        NetworkTools.requestData(.get, URLStr: "http://capi.douyucdn.cn/api/v1/getbigDataRoom", params: ["time": Date.getCurrentTime()]) { (result) in
             // 1. 将result转成字典类型
             guard let resultDict = result as? [String : NSObject] else { return }
             
@@ -64,7 +64,7 @@ extension RecommendViewModel {
         // 4. 请求第二部分颜值数据
         disGroup.enter()
         // http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=4&offset=0&time=1474252024
-        NetworkTools.requestData(type: .GET, URLStr: "http://capi.douyucdn.cn/api/v1/getVerticalRoom", params: params) { (result) in
+        NetworkTools.requestData(.get, URLStr: "http://capi.douyucdn.cn/api/v1/getVerticalRoom", params: params) { (result) in
             // 1. 将result转成字典类型
             guard let resultDict = result as? [String : NSObject] else { return }
             
@@ -91,7 +91,7 @@ extension RecommendViewModel {
         // 5. 请求后面部分游戏数据
         disGroup.enter()
         // http://capi.douyucdn.cn/api/v1/getHotCate?limit=4&offset=0&time=1474252024
-        NetworkTools.requestData(type: .GET, URLStr: "http://capi.douyucdn.cn/api/v1/getHotCate", params: params) { (result) in
+        NetworkTools.requestData(.get, URLStr: "http://capi.douyucdn.cn/api/v1/getHotCate", params: params) { (result) in
             // 1. 将result转换成字典
             guard let resultDict = result as? [String: NSObject] else { return }
             
@@ -121,9 +121,9 @@ extension RecommendViewModel {
     }
     
     // 请求无线轮播数据
-    func requestCycleData(finishCallback: @escaping () -> ()) {
+    func requestCycleData(_ finishCallback: @escaping () -> ()) {
         // http://www.douyutv.com/api/v1/slide/6?version=2.300
-        NetworkTools.requestData(type: .GET, URLStr: "http://www.douyutv.com/api/v1/slide/6", params: ["version": "2.300"]) { (result) in
+        NetworkTools.requestData(.get, URLStr: "http://www.douyutv.com/api/v1/slide/6", params: ["version": "2.300"]) { (result) in
             // 1. 获取整体字典数据
             guard let resultDict = result as? [String: NSObject] else { return }
             
