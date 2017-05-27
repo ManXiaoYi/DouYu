@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,7 +26,6 @@
                     <rect key="frame" x="10" y="21" width="18" height="18"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="18" id="PWh-AE-5q8"/>
-                        <constraint firstAttribute="width" constant="18" id="UJH-OG-L8u"/>
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Iy-Wa-edv">
@@ -60,6 +59,7 @@
             </constraints>
             <connections>
                 <outlet property="iconImageView" destination="hyi-fA-Eqk" id="joa-t0-Vbk"/>
+                <outlet property="moreBtn" destination="6Iy-Wa-edv" id="2OF-nu-tyr"/>
                 <outlet property="titleLabel" destination="Gpu-rf-1Nd" id="mZY-mv-ei7"/>
             </connections>
         </collectionReusableView>
