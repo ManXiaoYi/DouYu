@@ -48,7 +48,8 @@ class HomeViewController: UIViewController {
         var childVCs = [UIViewController]()
         childVCs.append(RecommendViewController())
         childVCs.append(GameViewController())
-        for _ in 1...2 {
+        childVCs.append(AmuseViewController())
+        for _ in 1..<2 {
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
             childVCs.append(vc)
@@ -64,7 +65,7 @@ class HomeViewController: UIViewController {
     // MARK:- 系统回调函数
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         // 设置UI界面
         setupUI()
     }
