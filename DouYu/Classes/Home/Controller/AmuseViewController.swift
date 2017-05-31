@@ -40,13 +40,16 @@ extension AmuseViewController {
         
         // 2. 请求数据
         amuseVM.loadAmuseData {
-            // 2.1.刷新表格
+            // 2.1. 刷新表格
             self.collectionView.reloadData()
             
-            // 2.2.调整数据
+            // 2.2. 调整数据
             var groups = self.amuseVM.anchorGroups
             groups.removeFirst()
             self.menuView.groups = groups
+            
+            // 2.3. 数据请求完成
+            self.loadDataFinished()
         }
     }
 }

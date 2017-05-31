@@ -19,7 +19,7 @@ let kNormalItemW = (kScreenW - 3 * kItemMargin) / 2
 let kNormalItemH = kNormalItemW * 3 / 4
 let kPrettyItemH = kNormalItemW * 4 / 3
 
-class BaseAnchorViewController: UIViewController {
+class BaseAnchorViewController: BaseViewController {
     
     // MARK:- 懒加载属性
     var baseVM: BaseViewModel!
@@ -60,8 +60,15 @@ class BaseAnchorViewController: UIViewController {
 
 // MARK:- 设置UI界面
 extension BaseAnchorViewController {
-    func setupUI() {
+    override func setupUI() {
+        // 1. 给父类中的contentView的引用进行赋值
+        contentView = collectionView
+        
+        // 2. 添加collectionView
         view.addSubview(collectionView)
+        
+        // 3. 调用super.setupUI()
+        super.setupUI()
     }
 }
 
